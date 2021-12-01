@@ -17,11 +17,10 @@ const connect = function() {
   conn.setEncoding('utf8');
   conn.on("data", (data) => {
     console.log(data);
+  }) 
   return conn;
-  })  
 };
 
 module.exports = { 
-  // net, 
   connect,
 };
