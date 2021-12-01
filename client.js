@@ -12,7 +12,7 @@ const connect = function() {
   });
   conn.on("connect", () => {
     conn.write("Name: N.R");
-  })
+  });
   // interpret incoming data as text:
   conn.setEncoding('utf8');
   conn.on("data", (data) => {
